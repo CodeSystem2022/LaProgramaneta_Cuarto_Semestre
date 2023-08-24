@@ -1,0 +1,97 @@
+2023-06-01 02:58:04,732:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 02:59:54,841:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 02:59:54,900:DEBUG [Persona.py:55] 
+            Id Persona: Jose,
+            Nombre: Lopez,
+            Apellidos: Jlopez@gmail.com,
+            Email: None
+        
+2023-06-01 03:01:17,998:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 03:01:30,711:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 03:01:30,719:DEBUG [Persona.py:55] 
+            Id Persona: None,
+            Nombre: Jose,
+            Apellidos: Lopez,
+            Email: Jlopez@gmail.com
+        
+2023-06-01 03:03:19,176:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 03:03:19,180:DEBUG [Persona.py:55] 
+            Id Persona: None,
+            Nombre: Jose,
+            Apellidos: Lopez,
+            Email: Jlopez@gmail.com
+        
+2023-06-01 03:03:32,457:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-01 03:03:32,468:DEBUG [Persona.py:55] 
+            Id Persona: None,
+            Nombre: Jose,
+            Apellidos: Lopez,
+            Email: Jlopez@gmail.com
+        
+2023-06-01 03:03:32,471:DEBUG [Persona.py:57] 
+            Id Persona: 1,
+            Nombre: None,
+            Apellidos: None,
+            Email: None
+        2023-06-21 14:58:30,026:ERROR [conexion.py:26] Error al conectar a la BD: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-06-21 14:58:48,936:ERROR [conexion.py:26] Error al conectar a la BD: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-06-29 17:21:35,137:ERROR [Conexion.py:26] Error al conectar a la BD: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-06-29 17:23:04,613:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre: Juan,
+            Apellidos: Perez,
+            Email: jperez@gmail.com
+        
+2023-06-29 17:23:04,615:DEBUG [Persona.py:55] 
+            Id Persona: None,
+            Nombre: Jose,
+            Apellidos: Lopez,
+            Email: Jlopez@gmail.com
+        
+2023-06-29 17:23:04,616:DEBUG [Persona.py:57] 
+            Id Persona: 1,
+            Nombre: None,
+            Apellidos: None,
+            Email: None
+        
+2023-07-04 11:18:20,891:ERROR [Conexion.py:41] error al obtener el pool: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-07-04 11:18:48,556:ERROR [Conexion.py:41] error al obtener el pool: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-07-04 11:18:51,122:ERROR [Conexion.py:41] error al obtener el pool: could not translate host name "127.0.0.0.1" to address: Unknown host
+
+2023-07-04 11:25:32,575:ERROR [Conexion.py:41] error al obtener el pool: could not translate host name "127.0.0.0.1" to address: Unknown host
+
