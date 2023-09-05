@@ -25,8 +25,8 @@ Grupo **La Programaneta** de la **UTN FRSR** San Rafael.
  
 | **Semana** | 💡 **Scrum Master** 💡    |
 |----------------------|----------------------|
-| **🕹️: 1** | *[Jazmin Caro](https://github.com/Jazmin-Caro)* |
-| **🕹️: 2** |  |   
+| **🕹️: 1** | *[Federico Salinas](https://github.com/FedericoISalinas)* | 
+| **🕹️: 2** | *[Jazmin Caro](https://github.com/Jazmin-Caro)* |   
 | **🕹️: 3** |  |
 | **🕹️: 4** |  |
 | **🕹️: 5** |  |
