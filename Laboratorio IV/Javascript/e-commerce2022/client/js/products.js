@@ -27,4 +27,11 @@ const products = [
         quanty: 1,
         img: "mayonesa.png",
     },
+    {
+        id: 5,
+        productName: "Pollo",
+        price: 2400,
+        quanty: 1,
+        img:"pollo.png"
+    }
 ]
