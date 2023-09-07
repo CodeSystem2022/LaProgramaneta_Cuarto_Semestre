@@ -27,7 +27,7 @@ Grupo **La Programaneta** de la **UTN FRSR** San Rafael.
 |----------------------|----------------------|
 | **🕹️: 1** | *[Federico Salinas](https://github.com/FedericoISalinas)* | 
 | **🕹️: 2** | *[Jazmin Caro](https://github.com/Jazmin-Caro)* |   
-| **🕹️: 3** |  |
+| **🕹️: 3** | *[Joaquin Clavell](https://github.com/Joaquin-Clavell)* |
 | **🕹️: 4** |  |
 | **🕹️: 5** |  |
 | **🕹️: 6** |  |
