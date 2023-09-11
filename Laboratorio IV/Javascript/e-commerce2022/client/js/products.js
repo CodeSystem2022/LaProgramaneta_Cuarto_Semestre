@@ -1,37 +1,33 @@
 const products = [
     {
         id: 1,
-        productName: "Banana",
-        price: 480,
+        productName: "Air Jordan XXXVII",
+        price: 136000,
         quanty: 1,
-        img: "banana.png",
+        img: "Air Jordan XXXVII.png",
     },
     {
         id: 2,
-        productName: "Leche",
-        price: 950,
+        productName: "Air Jordan 5 Retro SE",
+        price: 156000,
         quanty: 1,
-        img: "leche.png",
+        img: "Air Jordan 5 Retro SE.png",
     },
     {
         id: 3,
-        productName: "Pollo",
-        price: 750,
+        productName: "Air Jordan XXXVII",
+        price: 145000,
         quanty: 1,
-        img: "pollo.png",
+        img: "Air Jordan XXXVII Tatum.png",
     },
     {
         id: 4,
-        productName: "Mayonesa",
-        price: 510,
+        productName: "Air Jordan 1 Mid",
+        price: 92000,
         quanty: 1,
-        img: "mayonesa.png",
+        img: "Air Jordan 1 Mid.png",
     },
-    {
-        id: 5,
-        productName: "Pollo",
-        price: 2400,
-        quanty: 1,
-        img:"pollo.png"
-    }
 ]
+
+
+

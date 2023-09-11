@@ -6,7 +6,7 @@ products.forEach((product) => {
     content.innerHTML = `
     <img src="${product.img}">
     <h3>${product.productName}</h3>
-    <p>${product.price} $</p>
+    <p>$ ${formatearNumero(product.price)}</p>
     `;
     shopContent.append(content);
 
@@ -16,13 +16,22 @@ products.forEach((product) => {
     content.append(buyButton);
 
     buyButton.addEventListener("click", () => {
-        cart.push({
-            id: product.id,
-            productName: product.productName,
-            price: product.price,
-            quanty: product.quanty,
-            img: product.img,
-        });
-        console.log(cart);
+        const repeat = cart.some((repeatPrpduct) => repeatPrpduct.id === product.id);
+
+        if(repeat){
+            cart.map((prod)=> {
+                if(prod.id === product.id){
+                    prod.quanty++;
+                }
+            });
+        }else{
+            cart.push({
+                id: product.id,
+                productName: product.productName,
+                price: product.price,
+                quanty: product.quanty,
+                img: product.img,
+            });
+        }
     });
 });
