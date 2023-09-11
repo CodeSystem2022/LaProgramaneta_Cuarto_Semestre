@@ -1,104 +1,245 @@
-/*products styles*/
 
-body{
-    background-image: url("mercado.jpg");
+/*CUERPO PRINCIPAL*/
+body {
+    background-image: url("fondonike.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
-
+/*PRODUCTOS CONTENEDOR PRINCIPAL*/
 .card-products-container {
-    margin:5vh auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    
+    
 }
-
+/*PRODUCTOS DENTRO DEL CONTENEDOR*/
 .card-products {
     text-align: center;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
 }
 
+/*IMAGENES PANTALLA PRINCIPAL*/
 .card-products img {
-    margin-top: 40px;
-    width: 250px;
-    height: 250px;
+    margin-top: 90px;
+    width: 790px;
+    height: 775px;
+    
 }
 
+/*BOTON COMPRAR PANTALLA PRINCIPAL*/
 .card-products button {
     border: none;
     outline: 0;
-    padding: 10px;
+    padding: 30px;
     color: rgb(255, 255, 255);
     background-color: #000000;
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 15px;
+    font-size: 75px;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 .card-products button:hover {
     opacity: 0.7;
 }
 
-/*card button*/
-.cart-btn {
+/*BOTON CARRITO*/
+.cart-btn { 
     position: fixed;
-    top: 90vh;
-    right: 40px;
-    background-color: rgb(25, 25, 25);
-    padding: 10px;
+    text-align: center;
+    top: 88vh;
+    right: 60px;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
-    height: 24px;
-    width: 24px;
+    padding: 45px;
     transition: transform 0.2s ease-in-out;
+    font-size: 90px;
+    
 }
 
-.cart-btn:hover {
+.cart-btn:hover{
     cursor: pointer;
     opacity: 0.9;
 }
 
-/*modal*/
-.modal-overlay {
+/*PRODUCTOS GENERAL PANTALLA PRINCIPAL*/
+.card-products{
+    font-size:70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/*EFECTO DE CUANDO ABRIS EL CARRITO*/
+.modal-overlay{
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
+    
 }
 
+/*CONTENEDOR DEL BOX DEL CARRITO*/
 .modal-container {
     display: none;
     background-color: #ffffff;
     box-shadow: 0px 3px 6px #00000029;
-    padding: 40px;
+    padding: 35px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 500px;
-    width: 100%;
+    max-width: 90%;
+    width: 50%;
     z-index: 1;
     max-height: 80vh;
-    overflow-y: auto;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
+/*NOSE*/
 .modal-container::-webkit-scrollbar {
-    display: none;
+    display: none; 
 }
 
+/*CRUZ PARA CERRAR EL CARRITO*/
 .modal-close {
     float: right;
     cursor: pointer;
+    font-size: 40px;
+    
+    
 }
 
+/*TITULO DEL CARRITO*/
 .modal-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 100px;
+    font-weight: arial;
     text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
+
+/*BOX DEL CARRITO*/
+.modal-body {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*PRODUCTO GENERAL DEL CARRITO*/
+.product {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    font-size: 75px;
+    font-family: arial;
+
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+}
+
+/*NOMBRE DEL PRODUCTO DENTRO DEL CARRITO*/
+.product h3 {
+    align-items: center;
+    width: 900px;
+    font-size: 75px;
+    margin-top: 1px;
+}
+
+/* -1+ DE LOS PRODUCTOS*/
+.quantity {
+    color: #333333;
+    cursor: pointer;
+    font-size: 75px;
+    font-weight: arial;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+/*BOTONES DE INCREMENTAR Y DECREMENTAR VALOR DEL PRODUCTO*/
+.quantity-btn-decrese,
+.quantity-btn-increse {
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: arial;
+    
+}
+/*REPONSIVE DESIGN, SINGIFICA QUE LA RESOLUCION SE ADAPTE A CUALQUIER PANTALLA*/
+@media only screen and (max-width: 500px) {
+    .product-img {
+        display: none;
+    }
+    .modal-body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/*PRECIO DE CADA PRODUCTO DENTRO DEL CARRITO*/
+.price {
+    font-size: 75px;
+    font-weight: arial;
+    margin-top: 0px
+    
+}
+
+/* CRUZ ROJA DE ELIMINAR PRODUCTO*/
+.delete-product {
+   margin-top: 0px;
+   margin-right: 100px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   cursor: pointer; 
+   font-size: 35px; 
+}
+/* PRECIO TOTAL CALCULADO */
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+  }
+
+
+/* TAMAÑO IMAGENES DENTRO DEL CARRITO*/
+.modal-container img {
+    max-width: 350px; /* Ancho máximo de 180px */
+    max-height: 350px; /* Altura máxima de 180px */
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-bottom: 5px;
+    
+}
+
