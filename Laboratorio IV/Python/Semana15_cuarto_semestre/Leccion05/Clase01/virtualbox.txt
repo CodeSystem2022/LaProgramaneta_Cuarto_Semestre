@@ -1,0 +1,15 @@
+Una máquina virtual (VM) es un software que emula un sistema operativo completo. En el caso de Python, la máquina virtual es un entorno de ejecución que permite a los programas escritos en Python correr en diferentes sistemas operativos y arquitecturas de hardware.
+
+La máquina virtual de Python es una implementación específica de la máquina virtual CPython, que es la implementación más popular y utilizada de Python.
+
+La máquina virtual de Python tiene varias aplicaciones en el mundo de la programación:
+
+1. Portabilidad: Al ser un programa independiente del sistema operativo, la máquina virtual de Python permite a los programas escritos en Python correr en diferentes sistemas operativos sin necesidad de instalar Python en cada uno de ellos.
+
+2. Aislamiento: La máquina virtual de Python permite a los desarrolladores crear un entorno aislado para ejecutar y probar sus programas en Python. Esto es especialmente útil en entornos de desarrollo en equipo, donde diferentes miembros del equipo pueden trabajar en diferentes proyectos sin afectar el trabajo de los demás.
+
+3. Ejecución en paralelo: La máquina virtual de Python permite a los programas en Python correr en paralelo, lo que puede mejorar el rendimiento de los programas en ciertos casos.
+
+4. Facilitar la implementación: La máquina virtual de Python facilita la implementación de aplicaciones en Python en diferentes plataformas y sistemas operativos, ya que no requiere que el usuario instale Python en su sistema.
+
+En resumen, la máquina virtual de Python es una herramienta poderosa y versátil que permite a los programas escritos en Python correr en diferentes sistemas operativos y arquitecturas de hardware, lo que facilita la portabilidad, el aislamiento, la ejecución en paralelo y la implementación de aplicaciones en Python.
