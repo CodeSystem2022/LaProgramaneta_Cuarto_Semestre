@@ -14,12 +14,10 @@ app.get("/", (req, res) => res.json({message: "Bienvenidos a mi proyecto"}));
 app.use('/api',tareaRouter);
 app.use('/api', authRoutes);
 
-// -
 //app.get("/", (req, res) => {
 //    throw new Error('Error generado or el usuario');
 //    res.send('test')
 //});
-
 
 //MANEJANDO ERRORES
 app.use((err, req, res, next) => {
