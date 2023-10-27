@@ -1,0 +1,35 @@
+$primary-color: rgb(90, 89, 28);
+$secundary-color: rgb(224, 124, 31);
+$tertiary-color: rgb(226, 226, 154);
+$primary-tex-color: rgb(63, 38, 1);
+$font-stack: 'Kanit', sans-serif;
+body{
+    background-color: $secundary-color;
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    p{
+        font-size: 1.5;
+        padding-left: 30px ;
+    }
+    .icons{
+         display: flex;
+         botton {
+            background: none;
+            border-style: none;
+         }
+    }
+}
+main{
+    background-color: $primary-color;
+}
+footer{
+    $background: rgb(199, 116, 20);
+    background-color: $background;
+    width: 100%;
+    height: 250px;
+}
