@@ -26,7 +26,7 @@ export const singin = async (req, res) => {
         return req.json(result.rows[0]);
 }
 
-export const singnup = async(req, res) => {
+export const singnup = async(req, res, next) => {
     const {name, email, password} = req.body;
  
     try {
@@ -47,12 +47,16 @@ export const singnup = async(req, res) => {
          if(error.code === "23505"){
             return res.status(400).json({menssage : "El correo ya existe"});
          }
-         
+         new(error);
     }
 };
 
+export const singnout = (req, res) => {
+    res.clearCookie('token');
+    return res.json({menssage: "Sesion cerrada"});
+}
 
-
-export const singnout = (req, res) => res.send("Cerrando sesion");
-
-export const profile = (req, res) => res.send("Perfil de usuario")
+export const profile = async (req, res) => {
+    const result = await pool.query("SELECT * FROM usuarios WHERE id = $1", [req.usuarioId]);
+    return res.json(result.rows[0]);
+}
