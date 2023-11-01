@@ -4,6 +4,7 @@ CREATE TABLE tareas (
     descripcion TEXT,
 );
 
+ALTER TABLE tareas ADD COLUMN usuarios?id INTEGER REFERENCES uuarios(id);
 CREATE TABLE usuarios (
     id SERTAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -11,4 +12,6 @@ CREATE TABLE usuarios (
     password VARCHAR(255) NOT NULL,
     fecha_registro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     fecha_actualizacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-)
+);
+
+ALERTE TABLE usuarios ADD COLUMN gravatar VARCHAR(255);

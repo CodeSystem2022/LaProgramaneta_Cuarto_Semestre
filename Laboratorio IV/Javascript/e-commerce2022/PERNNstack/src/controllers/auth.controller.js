@@ -1,6 +1,7 @@
 import {pool} from "../db.js"
 import bcrypt from  "bcrypt";
 import {createAccessToken} from "../libs/jwj.js"
+import md5 from "md5";
 
 export const singin = async (req, res) => {
     const {email, password} = req.body;
@@ -31,9 +32,10 @@ export const singnup = async(req, res, next) => {
  
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
-        console.log(heshedPassord);
+        md5(email);
+        const gravate = "https://www.gravate.com/avatar/" + md5(email);
 
-        const result = await pool.query("INSERT INTO usuarios (name, email, password) VALUES ($1, $2, $3)  RETURNING *", [name, email, hashedPasswordpassword])
+        const result = await pool.query("INSERT INTO usuarios (name, email, password, gravatar ) VALUES ($1, $2, $3, $4)  RETURNING *", [name, email, hashedPasswordpassword, gravate])
     
         const token = await createAccessToken({id: result.rows[0].id});
         console.log(result);
