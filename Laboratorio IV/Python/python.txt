@@ -1,0 +1,1 @@
+Semana 16: Instalación de wsl (Windows Subsystem for Linux)
